@@ -3,7 +3,6 @@ import Header from './components/Header'
 import Footer from './components/Footer'
 import Search from './components/Search'
 import Movies from './components/Movies'
-import Preloader from './components/preloader'
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -26,7 +25,11 @@ function App() {
         <Header />
         <main className='main-content'>
           <Search onSearch={handleSearch}/>
-          {loading ? ( <Preloader/> ) : ( <Movies movies={movies} hasSearched={hasSearched} />)}
+          {loading ? ( 
+            <div className='spinner-border spinner-custom not-found' role='status'>
+              <span className='visually-hidden'>Loading...</span>
+            </div>
+           ) : ( <Movies movies={movies} hasSearched={hasSearched} />)}
         </main>
         <Footer />
       </div>

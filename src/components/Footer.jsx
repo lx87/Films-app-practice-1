@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="bg-dark text-light text-center py-3">
-      <p>© 2025 Все права <span className="fw-bold">наверное</span> защищены</p>
+      <p className="m-0">© 2025 All rights <span className="fw-bold fst-italic">probably</span> reserved, developed by Rami <span className="fw-bold fst-italic">LX</span> Laily </p>
     </footer>
   );
 };

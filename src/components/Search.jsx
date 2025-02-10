@@ -32,7 +32,7 @@ const Search = ({ onSearch }) => {
           value={query}
           onChange={handleChange}
           onKeyDown={handleKeyPress}
-          placeholder="Введите название фильма"
+          placeholder="Enter name"
         />
         <button className="btn btn-primary" onClick={handleSearch}>
           Поиск
@@ -48,7 +48,7 @@ const Search = ({ onSearch }) => {
             checked={type === 'movie'}
             onChange={handleTypeChange}
           />
-          Фильмы
+          Films
         </label>
         <label className='me-4'>
           <input
@@ -58,7 +58,7 @@ const Search = ({ onSearch }) => {
             checked={type === 'series'}
             onChange={handleTypeChange}
           />
-          Сериалы
+          Series
         </label>
         <label className="me-4">
           <input
@@ -68,7 +68,7 @@ const Search = ({ onSearch }) => {
             checked={type === 'all'}
             onChange={handleTypeChange}
           />
-          Все
+          All types
         </label>
       </div>
     </div>
