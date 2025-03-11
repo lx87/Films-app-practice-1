@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
 
 const Search = ({ onSearch }) => {
   const [query, setQuery] = useState('');
@@ -73,10 +72,6 @@ const Search = ({ onSearch }) => {
       </div>
     </div>
   );
-};
-
-Search.propTypes = {
-  onSearch: PropTypes.func.isRequired,
 };
 
 export default Search;

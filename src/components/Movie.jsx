@@ -1,14 +1,9 @@
-import PropTypes from 'prop-types';
-
 const Movie = ({ movie }) => {
   return (
     <div className="card">
       {
-        movie.Poster === 'N/A' ? (
-          <img 
-            src={`https://placehold.co/600x600?text=${movie.Title}`}
-          />
-        ) : 
+        movie.Poster === 'N/A' ? ( <img src={`https://placehold.co/600x600?text=${movie.Title}`}/>) 
+        : 
         <img src={movie.Poster} className="card-img-top" alt={movie.Title} />
       }
 
@@ -18,15 +13,6 @@ const Movie = ({ movie }) => {
       </div>
     </div>
   );
-};
-
-Movie.propTypes = {
-  movie: PropTypes.shape({
-    Poster: PropTypes.string.isRequired,
-    Title: PropTypes.string.isRequired, 
-    Year: PropTypes.string.isRequired,   
-    imdbID: PropTypes.string.isRequired, 
-  }).isRequired,
 };
 
 export default Movie;

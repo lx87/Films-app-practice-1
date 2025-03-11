@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import Movie from './Movie';
 
 const Movies = ({ movies, hasSearched }) => {
@@ -24,11 +23,6 @@ const Movies = ({ movies, hasSearched }) => {
       </div>
     </div>
   );
-};
-
-Movies.propTypes = {
-  movies: PropTypes.array.isRequired,
-  hasSearched: PropTypes.bool.isRequired,
 };
 
 export default Movies;
